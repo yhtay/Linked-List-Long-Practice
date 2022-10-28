@@ -1,4 +1,4 @@
- const chai = require('chai');
+const chai = require('chai');
 const expect = chai.expect;
 
 const solution = require('../02-doubly-linked-list');
