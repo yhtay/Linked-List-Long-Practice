@@ -31,8 +31,18 @@ class Queue {
 
     dequeue() {
         // Remove node from front of queue (linked list)
-
         // Your code here
+        if (!this.head) {
+            return null;
+        }
+        const removeHead = this.head;
+        this.head = removeHead.next;
+        if(!this.head) this.tail = null;
+
+        this.length--;
+
+        return removeHead.value;
+
 
         // Write your hypothesis on the time complexity of this method here
     }
